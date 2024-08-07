@@ -3,15 +3,13 @@
   "name": "shoppingcart",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+  "type": "module","scripts": {
+    "dev": "vite",
     "build": "vite build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preview": "vite build; vite preview --host"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite build; vite preview --host",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
